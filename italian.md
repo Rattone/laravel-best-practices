@@ -8,15 +8,15 @@
 
 [Validazione](#validation)
 
-[La logica aziendale dovrebbe essere nella classe di servizio](#business-logic-should-be-in-service-class)
+[La logica di business dovrebbe stare nelle classi di servizio](#business-logic-should-be-in-service-class)
 
 [Non ripeterti (DRY: Don't Repeat Yourself)](#dont-repeat-yourself-dry)
 
-[Preferisco usare Eloquent rispetto a Query Builder e query SQL non elaborate. Preferisce raccolte su array](#prefer-to-use-eloquent-over-using-query-builder-and-raw-sql-queries-prefer-collections-over-arrays)
+[Favorisci l'utilizzo dei Model Eloquent rispetto al Query Builder e alle query SQL raw. Preferisci le Collection agli array](#prefer-to-use-eloquent-over-using-query-builder-and-raw-sql-queries-prefer-collections-over-arrays)
 
 [Assegnazione di massa](#mass-assignment)
 
-[Non eseguire query nei modelli Blade e utilizzare il caricamento desideroso (problema N + 1)](#do-not-execute-queries-in-blade-templates-and-use-eager-loading-n--1-problem)
+[Non eseguire query nei template Blade e utilizza l'eager loading (problema N + 1)](#do-not-execute-queries-in-blade-templates-and-use-eager-loading-n--1-problem)
 
 [Commenta il tuo codice, ma preferisci il metodo descrittivo e i nomi delle variabili rispetto ai commenti](#comment-your-code-but-prefer-descriptive-method-and-variable-names-over-comments)
 
@@ -165,7 +165,7 @@ class PostRequest extends Request
 
 [Torna ai contenuti](#contents)
 
-### **La logica di business dovrebbe essere nella classe di servizio**
+### La logica di business dovrebbe stare nelle classi di servizio
 
 Un controller deve avere una sola responsabilità, quindi sposta la logica di business dai controller alle classi di servizio.
 
@@ -248,7 +248,7 @@ public function getArticles()
 
 [Torna ai contenuti](#contents)
 
-### **Favorisci l'utilizzo dei Model Eloquent rispetto al Query Builder e alle query SQL raw. Preferisci le Collection agli array**
+### Favorisci l'utilizzo dei Model Eloquent rispetto al Query Builder e alle query SQL raw. Preferisci le Collection agli array
 
 Eloquent ti consente di scrivere codice leggibile e manutenibile. Inoltre, Eloquent ha ottimi strumenti integrati come eliminazioni soft, eventi, scopes, ecc.
 
@@ -299,7 +299,7 @@ $category->article()->create($request->validated());
 
 [Torna ai contenuti](#contents)
 
-### **Non eseguire query nei template Blade e utilizzare l'eager loading (problema N + 1)**
+### Non eseguire query nei template Blade e utilizzare l'eager loading (problema N + 1)
 
 Male (fo 100 utenti, verranno eseguite 101 query DB):
 
