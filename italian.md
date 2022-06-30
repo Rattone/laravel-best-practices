@@ -121,7 +121,7 @@ class Client extends Model
 }
 ```
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
 ### **Validazione**
 
@@ -163,7 +163,7 @@ class PostRequest extends Request
 }
 ```
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
 ### La logica di business dovrebbe stare nelle classi di servizio
 
@@ -203,7 +203,7 @@ class ArticleService
 }
 ```
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
 ### **Non ripeterti (DRY: Don't Repeat Yourself)**
 
@@ -246,7 +246,7 @@ public function getArticles()
 }
 ```
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
 ### Favorisci l'utilizzo dei Model Eloquent rispetto al Query Builder e alle query SQL raw. Preferisci le Collection agli array
 
@@ -275,7 +275,7 @@ Buono:
 Article::has('user.profile')->verified()->latest()->get();
 ```
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
 ### **Assegnazione di massa**
 
@@ -297,7 +297,7 @@ Buono:
 $category->article()->create($request->validated());
 ```
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
 ### Non eseguire query nei template Blade e utilizzare l'eager loading (problema N + 1)
 
@@ -321,7 +321,7 @@ $users = User::with('profile')->get();
 @endforeach
 ```
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
 ### Commenta il tuo codice, ma cerca anche di rendere autoesplicativi i nomi di metodi e variabili
 
@@ -344,7 +344,7 @@ Buono:
 if ($this->hasJoins())
 ```
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
 ### Non inserire JS e CSS nei template Blade e non inserire HTML nelle classi PHP
 
@@ -372,7 +372,7 @@ let article = $('#article').val();
 
 Il modo migliore è utilizzare il pacchetto PHP-JS specializzato per trasferire i dati.
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
 ### Usa file di configurazione e lingua, costanti anziché testo nel codice
 
@@ -398,7 +398,7 @@ public function isNormal()
 return back()->with('message', __('app.article_added'));
 ```
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
 ### Utilizza gli strumenti standard Laravel accettati dalla community
 
@@ -426,7 +426,7 @@ Generazione di dati di test | Classi di seminatrice, Fabbriche modello, Faker | 
 Pianificazione delle attività | Utilità di pianificazione Laravel | Script e pacchetti di terze parti
 DB | MySQL, PostgreSQL, SQLite, SQL Server | MongoDB
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
 ### **Segui le naming convention di Laravel**
 
@@ -461,7 +461,7 @@ Config | snake_case | google_calendar.php |~~googleCalendar.php, google-calendar
 Contratto (interfaccia) | aggettivo o sostantivo | AuthenticationInterface | ~~Authenticatable, IAuthentication~~
 Trait | aggettivo | Notificabile | ~~NotificationTrait~~
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
 ### Utilizza la sintassi più breve e più leggibile ove possibile
 
@@ -500,7 +500,7 @@ Common syntax | Shorter and more readable syntax
 `->select('id', 'name')->get()` | `->get(['id', 'name'])`
 `->first()->name` | `->value('name')`
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
 ### **Utilizzare il container IoC o i Facades invece di istanziare nuove classi**
 
@@ -526,7 +526,7 @@ public function __construct(User $user)
 $this->user->create($request->validated());
 ```
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
 ### Non prelevare direttamente i dati dal file `.env`
 
@@ -548,7 +548,7 @@ Buono:
 $apiKey = config('api.key');
 ```
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
 ### **Memorizza le date nel formato standard. Utilizza gli accessors e i mutators per modificare il formato della data**
 
@@ -574,7 +574,7 @@ public function getSomeDateAttribute($date)
 {{ $object->ordered_at->some_date }}
 ```
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
 ### **Altre buone pratiche**
 
@@ -582,4 +582,4 @@ Non inserire mai alcuna logica nei file di route.
 
 Ridurre al minimo l'utilizzo di vanilla PHP nei template Blade.
 
-[Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
