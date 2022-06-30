@@ -18,7 +18,7 @@
 
 [Non eseguire query nei template Blade e utilizza l'eager loading (problema N + 1)](#do-not-execute-queries-in-blade-templates-and-use-eager-loading-n--1-problem)
 
-[Commenta il tuo codice, ma preferisci il metodo descrittivo e i nomi delle variabili rispetto ai commenti](#comment-your-code-but-prefer-descriptive-method-and-variable-names-over-comments)
+[Commenta il tuo codice, ma cerca anche di rendere autoesplicativi i nomi di metodi e variabili](#comment-your-code-but-prefer-descriptive-method-and-variable-names-over-comments)
 
 [Non inserire JS e CSS nei modelli Blade e non inserire HTML nelle classi PHP](#do-not-put-js-and-css-in-blade-templates-and-do-not-put-any-html-in-php-classes)
 
@@ -301,7 +301,7 @@ $category->article()->create($request->validated());
 
 ### Non eseguire query nei template Blade e utilizzare l'eager loading (problema N + 1)
 
-Male (fo 100 utenti, verranno eseguite 101 query DB):
+Male (per 100 utenti, verranno eseguite 101 query DB):
 
 ```php
 @foreach (User::all() as $user)
@@ -323,7 +323,7 @@ $users = User::with('profile')->get();
 
 [Torna ai contenuti](#contents)
 
-### **Commenta il tuo codice, ma cerca anche di rendere autoesplicativi i nomi di metodi e variabili**
+### Commenta il tuo codice, ma cerca anche di rendere autoesplicativi i nomi di metodi e variabili
 
 Male:
 
@@ -374,7 +374,7 @@ Il modo migliore è utilizzare il pacchetto PHP-JS specializzato per trasferire 
 
 [Torna ai contenuti](#contents)
 
-### **Usa file di configurazione e lingua, costanti anziché testo nel codice**
+### Usa file di configurazione e lingua, costanti anziché testo nel codice
 
 Male:
 
