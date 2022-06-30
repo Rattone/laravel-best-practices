@@ -2,15 +2,15 @@
 
 ## Contenuto
 
-[Principio della sola responsabilità](#single-responsibility-principle)
+[Principio di singola responsabilità](#single-responsibility-principle)
 
-[Modelli grassi, controller skinny](#fat-models-skinny-controllers)
+[Modelli grossi, controller snelli](#fat-models-skinny-controllers)
 
 [Validazione](#validation)
 
 [La logica aziendale dovrebbe essere nella classe di servizio](#business-logic-should-be-in-service-class)
 
-[Non ripeterti (SECCO)](#dont-repeat-yourself-dry)
+[Non ripeterti (DRY)](#dont-repeat-yourself-dry)
 
 [Preferisco usare Eloquent rispetto a Query Builder e query SQL non elaborate. Preferisce raccolte su array](#prefer-to-use-eloquent-over-using-query-builder-and-raw-sql-queries-prefer-collections-over-arrays)
 
@@ -39,6 +39,7 @@
 [Altre buone pratiche](#other-good-practices)
 
 ### **Principio di singola responsabilità**
+### Principio di singola responsabilità
 
 Una classe e un metodo dovrebbero avere una sola responsabilità.
 
@@ -79,9 +80,9 @@ public function getFullNameShort()
 }
 ```
 
-[🔝Torna ai contenuti](#contents)
+[🔝Torna ai contenuti](#contenuto)
 
-### **Fat models, skinny controllers**
+### Modelli grossi, controller snelli
 
 Inserisci tutta la logica legata al DB nei Model Eloquent oppure nei Repository a seconda che tu stia usando il Query Builder o le query SQL raw.
 
