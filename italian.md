@@ -2,35 +2,35 @@
 
 ## Contenuto
 
-[Principio di singola responsabilità](#single-responsibility-principle)
+[Principio di singola responsabilità](#principio-di-singola-responsabilità)
 
-[Modelli grossi, controller snelli](#fat-models-skinny-controllers)
+[Modelli grossi, controller snelli](#modelli-grossi-controller-snelli)
 
-[Validazione](#validation)
+[Validazione](#validazione)
 
-[La logica di business dovrebbe stare nelle classi di servizio](#business-logic-should-be-in-service-class)
+[La logica di business dovrebbe stare nelle classi di servizio](#la-logica-di-business-dovrebbe-stare-nelle-classi-di-servizio)
 
-[Non ripeterti (DRY: Don't Repeat Yourself)](#dont-repeat-yourself-dry)
+[Non ripeterti (DRY: Don't Repeat Yourself)](#non-ripeterti-dry-dont-repeat-yourself)
 
-[Favorisci l'utilizzo dei Model Eloquent rispetto al Query Builder e alle query SQL raw. Preferisci le Collection agli array](#prefer-to-use-eloquent-over-using-query-builder-and-raw-sql-queries-prefer-collections-over-arrays)
+[Favorisci l'utilizzo dei Model Eloquent rispetto al Query Builder e alle query SQL raw. Preferisci le Collection agli array](#favorisci-lutilizzo-dei-model-eloquent-rispetto-al-query-builder-e-alle-query-sql-raw-preferisci-le-collection-agli-array)
 
-[Assegnazione di massa](#mass-assignment)
+[Assegnazione di massa](#assegnazione-di-massa)
 
-[Non eseguire query nei template Blade e utilizza l'eager loading (problema N + 1)](#do-not-execute-queries-in-blade-templates-and-use-eager-loading-n--1-problem)
+[Non eseguire query nei template Blade e utilizza l'eager loading (problema N + 1)](#non-eseguire-query-nei-template-blade-e-utilizzare-leager-loading-problema-n--1)
 
-[Commenta il tuo codice, ma cerca anche di rendere autoesplicativi i nomi di metodi e variabili](#comment-your-code-but-prefer-descriptive-method-and-variable-names-over-comments)
+[Commenta il tuo codice, ma cerca anche di rendere autoesplicativi i nomi di metodi e variabili](#commenta-il-tuo-codice-ma-cerca-anche-di-rendere-autoesplicativi-i-nomi-di-metodi-e-variabili)
 
-[Non inserire JS e CSS nei modelli Blade e non inserire HTML nelle classi PHP](#do-not-put-js-and-css-in-blade-templates-and-do-not-put-any-html-in-php-classes)
+[Non inserire JS e CSS nei template Blade e non inserire HTML nelle classi PHP](#non-inserire-js-e-css-nei-template-blade-e-non-inserire-html-nelle-classi-php)
 
-[Usa file di configurazione e lingua, costanti anziché testo nel codice](#use-config-and-language-files-constants-instead-of-text-in-the-code)
+[Usa file di configurazione e lingua, costanti anziché testo nel codice](#usa-file-di-configurazione-e-lingua-costanti-anziché-testo-nel-codice)
 
-[Utilizzare gli strumenti standard Laravel accettati dalla community](#use-standard-laravel-tools-accepted-by-community)
+[Utilizza gli strumenti standard Laravel accettati dalla community](#use-standard-laravel-tools-accepted-by-community)
 
 [Segui le convenzioni di denominazione di Laravel](#follow-laravel-naming-conventions)
 
-[Utilizzare la sintassi più breve e più leggibile ove possibile](#use-shorter-and-more-readable-syntax-where-possible)
+[Utilizza la sintassi più breve e più leggibile ove possibile](#use-shorter-and-more-readable-syntax-where-possible)
 
-[Utilizzare il contenitore o le facciate IoC anziché la nuova classe](#use-ioc-container-or-facades-instead-of-new-class)
+[Utilizza il contenitore o le facciate IoC anziché la nuova classe](#use-ioc-container-or-facades-instead-of-new-class)
 
 [Non prelevare direttamente i dati dal file `.env`](#do-not-get-data-from-the-env-file-directly)
 
@@ -346,7 +346,7 @@ if ($this->hasJoins())
 
 [Torna ai contenuti](#contents)
 
-### **Non inserire JS e CSS nei templte Blade e non inserire HTML nelle classi PHP**
+### Non inserire JS e CSS nei template Blade e non inserire HTML nelle classi PHP
 
 Male:
 
@@ -400,7 +400,7 @@ return back()->with('message', __('app.article_added'));
 
 [Torna ai contenuti](#contents)
 
-### **Utilizzare gli strumenti standard Laravel accettati dalla community**
+### Utilizza gli strumenti standard Laravel accettati dalla community
 
 Favorisci l'utilizzo delle funzionalità integrate in Laravel e i pacchetti della community anziché utilizzare pacchetti e strumenti di terze parti. Altrimenti, qualsiasi sviluppatore che lavorerà con la tua app in futuro dovrà imparare nuovi strumenti. Inoltre, le possibilità di ottenere aiuto dalla comunità Laravel sono significativamente inferiori quando si utilizza un pacchetto o uno strumento di terze parti. Non far pagare il tuo cliente per quello.
 
@@ -463,7 +463,7 @@ Trait | aggettivo | Notificabile | ~~NotificationTrait~~
 
 [Torna ai contenuti](#contents)
 
-### **Utilizzare una sintassi più breve e più leggibile ove possibile**
+### Utilizza la sintassi più breve e più leggibile ove possibile
 
 Male:
 
@@ -528,7 +528,7 @@ $this->user->create($request->validated());
 
 [Torna ai contenuti](#contents)
 
-### **Non prelevare direttamente i dati dal file `.env`**
+### Non prelevare direttamente i dati dal file `.env`
 
 Passa i dati presenti nell'.env file ai file di configurazione e quindi usa l'helper `config ()` per prelevare i dati all'interno dell'applicazione.
 
