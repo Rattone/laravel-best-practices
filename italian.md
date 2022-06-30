@@ -38,7 +38,6 @@
 
 [Altre buone pratiche](#other-good-practices)
 
-### **Principio di singola responsabilità**
 ### Principio di singola responsabilità
 
 Una classe e un metodo dovrebbero avere una sola responsabilità.
