@@ -10,7 +10,7 @@
 
 [La logica aziendale dovrebbe essere nella classe di servizio](#business-logic-should-be-in-service-class)
 
-[Non ripeterti (DRY)](#dont-repeat-yourself-dry)
+[Non ripeterti (DRY: Don't Repeat Yourself)](#dont-repeat-yourself-dry)
 
 [Preferisco usare Eloquent rispetto a Query Builder e query SQL non elaborate. Preferisce raccolte su array](#prefer-to-use-eloquent-over-using-query-builder-and-raw-sql-queries-prefer-collections-over-arrays)
 
@@ -32,7 +32,7 @@
 
 [Utilizzare il contenitore o le facciate IoC anziché la nuova classe](#use-ioc-container-or-facades-instead-of-new-class)
 
-[Non ottiene direttamente i dati dal file `.env`](#do-not-get-data-from-the-env-file-directly)
+[Non prelevare direttamente i dati dal file `.env`](#do-not-get-data-from-the-env-file-directly)
 
 [Memorizza le date nel formato standard. Utilizzare accessori e mutatori per modificare il formato della data](#store-dates-in-the-standard-format-use-accessors-and-mutators-to-modify-date-format)
 
