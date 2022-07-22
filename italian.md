@@ -453,8 +453,8 @@ Metodo | camelCase | getAll | ~~get_all~~
 Metodo nel resource controller | [tavolo](https://laravel.com/docs/master/controllers#resource-controllers) | store | ~~saveArticle~~
 Metodo nella test class | camelCase | testGuestCannotSeeArticle |~~test_guest_cannot_see_article~~
 Variabile | camelCase | $articoliWithAuthor |~~$articles_with_author~~
-Collection | descrittivo, plurale | $activeUsers = Utente :: active () -> get () | ~~$active, $data~~
-Oggetto | descrittivo, singolare | $activeUser = User :: active () -> first () | ~~$users, $obj~~
+Collection | descrittivo, plurale | $activeUsers = Utente::active()->get() | ~~$active, $data~~
+Oggetto | descrittivo, singolare | $activeUser = User::active()->first() | ~~$users, $obj~~
 Indice file di configurazione e lingua | snake_case | articles_enabled |~~ArticlesEnabled; articles-enabled~~
 View | kebab-case | show-filtered.blade.php | ~~showFiltered.blade.php, show_filtered.blade.php~~
 Config | snake_case | google_calendar.php |~~googleCalendar.php, google-calendar.php~~
