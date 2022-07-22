@@ -445,7 +445,7 @@ Tutte le altre relazioni | plurale | articleComments | ~~articleComment, article
 Tabella | plurale | commenti_articolo | ~~article_comment, articleComments~~
 Tabella pivot | nomi di modelli singolari in ordine alfabetico | user_user | ~~user_article, articles_users~~
 Colonna della tabella | snake_case senza nome modello | meta_title |~~Meta Title; articolo meta_title~~
-Proprietà del Model | snake_case | $ model-> Created_at |~~$model->createdAt~~
+Proprietà del Model | snake_case | $model->created_at |~~$model->createdAt~~
 Foreign key | nome modello singolare con suffisso _id | article_id | ~~ArticleId, id_article, articles_id~~
 Chiave primaria | - | id |~~custom_id~~
 Migration | - | 2017_01_01_000000_create_articles_table |~~2017_01_01_000000_articles~~
