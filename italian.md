@@ -406,23 +406,23 @@ Favorisci l'utilizzo delle funzionalità integrate in Laravel e i pacchetti dell
 
 Task | Strumenti standard | Strumenti di terze parti
 ------------ | ------------- | -------------
-Autorizzazione | Politiche | Affida, Sentinel e altri pacchetti
+Autorizzazione | Policies | Entrust, Sentinel e altri pacchetti
 Compiling assets | Laravel Mix | Grunt, Gulp, 3rd party packages
-Ambiente di sviluppo | Laravel Sail, Fattoria | docker
+Ambiente di sviluppo | Laravel Sail, Homestead | Docker
 Distribuzione | Laravel Forge | Deployer e altre soluzioni
 Test unitari | PHPUnit, Mockery | Phpspec
 Test del browser | Laravel Dusk | Codeception
-DB | Eloquente | SQL, Doctrine
-Modelli | Lama | Ramoscello
-Lavorare con i dati | Collezioni Laravel | Array
-Convalida del modulo | Richiedi classi | Pacchetti di terze parti, convalida nel controller
+DB | Eloquent | SQL, Doctrine
+Templates | Blade | Twig
+Lavorare con i dati | Laravel Collections | Array
+Convalida dei form | Request classes | Pacchetti di terze parti, convalida nel controller
 Autenticazione | Incorporato | Pacchetti di terze parti, la tua soluzione
 Autenticazione API | Laravel Passport, Laravel Sanctum | Pacchetti JWT e OAuth di terze parti
 Creazione dell'API | Incorporato | API Dingo e pacchetti simili
 Lavorare con la struttura DB | Migrazioni | Lavorare direttamente con la struttura DB
 Localizzazione | Incorporato | Pacchetti di terze parti
 Interfacce utente in tempo reale | Laravel Echo, Pusher | Pacchetti di terze parti e funzionamento diretto con WebSocket
-Generazione di dati di test | Classi di seminatrice, Fabbriche modello, Faker | Creazione manuale dei dati di test
+Generazione di dati di test | Seeder classes, Model Factories, Faker | Creazione manuale dei dati di test
 Pianificazione delle attività | Utilità di pianificazione Laravel | Script e pacchetti di terze parti
 DB | MySQL, PostgreSQL, SQLite, SQL Server | MongoDB
 
